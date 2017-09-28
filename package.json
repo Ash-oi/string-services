@@ -1,5 +1,5 @@
 {
-  "name": "String Services",
+  "name": "string-services",
   "description": "provides a bunch of string utilities for the modern developer",
   "version": "0.0.1",
   "private": false,
