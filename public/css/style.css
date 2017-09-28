@@ -1,3 +1,11 @@
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+} 
+
 .page-container {
   margin-left:20%;
   margin-right:20%;
