@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title title
+    link(rel='stylesheet', href='css/style.css')
+    script(src='js/script.js')
+  body
+    .page-container
+      h1 String Services
+      p Simple string operations for the lazy programmer
+
+      h2 Split on...
+      .character-input
+        input(id='split-on-character' type='text')
+        button(id="split" onclick="splitString()") Split
+    
+      textarea(id="split-on-string", cols="90", rows="30")
+      
+
+      p Send me feature suggestions on github
+      p Donate so I don't have to pay for hosting

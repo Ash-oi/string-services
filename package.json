@@ -1,0 +1,22 @@
+{
+  "name": "String Services",
+  "description": "provides a bunch of string utilities for the modern developer",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Ashley McVeigh",
+  "homepage": "",
+  "contributors": [
+    "Ashley McVeigh <ashleymcveigh92@gmail.com>"
+  ],
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {},
+  "repository": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ]
+}
