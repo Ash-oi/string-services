@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='utf-8')
     title String Services
     link(rel='stylesheet', href='css/style.css')
-    script(src='js/script.js')
+    script(src='js/scripts.js')
   body
     .page-container
       h1 String Services
@@ -14,9 +14,11 @@ html(lang='en')
       .character-input
         input(id='split-on-character' type='text')
         button(id="split" onclick="splitString()") Split
+        button(id="urlDecode" onclick="urlDecode()") UrlDecode
     
-      textarea(id="split-on-string", cols="90", rows="30")
+      textarea(id="split-on-body", cols="90", rows="30")
       
+      br
 
-      p Send me feature suggestions on github
+      a(href="https://github.com/AshleyMcVeigh") Send me feature suggestions on github
       p Donate so I don't have to pay for hosting
