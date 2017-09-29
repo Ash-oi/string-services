@@ -36,17 +36,46 @@ textarea:focus {
   border: none;
   outline: none;
   border-radius: 3px;
-  width: 90px;
-  background-color: #35648A;
+  background-color: #626669;
   color:white;
+  width: 90px;
   font-weight: 700;
 }
 
-.character-input > button:hover{
-  background-color: #668CA8;
+.character-input > button:hover {
+  background-color: #979EA3;
 }
 
-.character-input > button:active{
-  background-color: #0E3B5C;
+.character-input > button:active {
+  background-color: #3F4041;
 }
+
+/* encode buttons */
+.encode-button {
+  background-color: #35648A !important;
+  color:white;
+}
+
+.encode-button:hover{
+  background-color: #668CA8 !important;
+}
+
+.encode-button:active{
+  background-color: #0E3B5C !important;
+}
+
+/* decode buttons  */
+.decode-button {
+  background-color: #D4823F !important;
+  color:white;
+}
+
+.decode-button:hover{
+  background-color: #E4B271 !important;
+}
+
+.decode-button:active{
+  background-color: #5C3A0E !important;
+}
+
 

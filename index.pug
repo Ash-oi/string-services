@@ -14,7 +14,14 @@ html(lang='en')
       .character-input
         input(id='split-on-character' type='text')
         button(id="split" onclick="splitString()") Split
-        button(id="urlDecode" onclick="urlDecode()") UrlDecode
+        br
+        | Encode
+        button.encode-button(id="urlDecode" onclick="urlEncode()") UrlEncoded
+        button.encode-button(id="base64" onclick="base64Encode()") Base64
+        br
+        | Decode
+        button.decode-button(id="urlDecode" onclick="urlDecode()") UrlEncoded
+        button.decode-button(id="base64" onclick="base64Decode()") Base64
     
       textarea(id="split-on-body", cols="90", rows="30")
       
