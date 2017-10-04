@@ -9,23 +9,25 @@ html(lang='en')
     .page-container
       h1 String Services
       p Simple string operations for the lazy programmer
-
-      h2 Split on...
       .character-input
-        input(id='split-on-character' type='text')
-        button(id="split" onclick="splitString()") Split
+        input(id='split-on-character' placeholder="Characters" type='text')
+        button.uniform-width(id="split" onclick="splitString()") Split
         br
-        | Encode
-        button.encode-button(id="urlDecode" onclick="urlEncode()") UrlEncoded
-        button.encode-button(id="base64" onclick="base64Encode()") Base64
+        input(id='replace-on-character' placeholder="Char or regex" type='text')
+        input(id='replace-with-character' placeholder="Characters" type='text')
+        button.uniform-width(id="replace" onclick="findAndReplace()") Replace
         br
-        | Decode
-        button.decode-button(id="urlDecode" onclick="urlDecode()") UrlEncoded
-        button.decode-button(id="base64" onclick="base64Decode()") Base64
-    
-      textarea(id="split-on-body", cols="90", rows="30")
-      
+        button.encode-button(id="urlDecode" onclick="urlEncode()") Url Encode
+        button.encode-button(id="base64" onclick="base64Encode()") Base64 Encode
+        br
+        button.decode-button(id="urlDecode" onclick="urlDecode()") Url Decode
+        button.decode-button(id="base64" onclick="base64Decode()") Base64 Decode
+        br
+        button.format-button(id="jsonFormat" onclick="jsonFormat()") Format JSON
+        .explination 
+          | <- this is a WIP, it's not smart.
+      textarea(id="split-on-body", cols="90", rows="30") 
       br
-
+      p WIP - Latest update is 2017-10-04
       a(href="https://github.com/AshleyMcVeigh") Send me feature suggestions on github
       p Donate so I don't have to pay for hosting
