@@ -10,15 +10,15 @@ html(lang='en')
       h1 String Services
       p Simple string operations for the lazy programmer
       .character-input
-        input(id='split-on-character' placeholder="Split on..." type='text')
+        input(id='split-on-character' placeholder="Split on" type='text')
         button.uniform-width(id="split" onclick="splitString()") Split
-        input.checkbox(type="checkbox" id="split-regex" value="isRegex") 
+        input.checkbox(type="checkbox" id="split-regex" title="regex search that automatically adds / /g to your input") 
         | Regex
         br
-        input(id='replace-on-character' placeholder="Replace on..." type='text')
-        input(id='replace-with-character' placeholder="Replace with..." type='text')
+        input(id='replace-on-character' placeholder="Replace on" type='text')
+        input(id='replace-with-character' placeholder="Replace with" type='text')
         button.uniform-width(id="replace" onclick="findAndReplace()") Replace
-        input.checkbox(type="checkbox" id="replace-regex")
+        input.checkbox(type="checkbox" id="replace-regex" title="regex replace that automatically adds / /g to your replace on input")
         | Regex
         
         br
@@ -28,10 +28,10 @@ html(lang='en')
         button.decode-button(id="urlDecode" onclick="urlDecode()") Url Decode
         button.decode-button(id="base64" onclick="base64Decode()") Base64 Decode
         br
-        button.format-button(id="jsonFormat" onclick="jsonFormat()") Format JSON
+        button.format-button(id="jsonFormat" onclick="jsonFormat()" title="This just runs JSON.parse + JSON.stringify(,null,2) on your input") Format JSON
         .explination 
           | <- this is a WIP, it's not smart.
-    textarea(id="input-body", cols="150", rows="30")
+    textarea(id="input-body", rows="30")
     br
     .page-container
       .small-plug-text

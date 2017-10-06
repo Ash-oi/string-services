@@ -28,7 +28,6 @@ textarea {
   margin-bottom: 12px;
 }
 
-.character-input > input:not(.checkbox) {
 .character-input > input:not(.checkbox):not(button) {
   padding: 6px;
   margin: 3px;
@@ -37,6 +36,9 @@ textarea {
   -moz-appearance: none;
   border: 1px solid #C0C0C0;
   width:100px;
+  font-family: monospace;
+  font-size:9pt;
+  line-height:12pt;
 }
 
 .character-input > button {
@@ -50,6 +52,7 @@ textarea {
   background-color: #626669;
   color:white;
   font-weight: 700;
+  line-height: 12pt
 }
 
 .explination{
