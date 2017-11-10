@@ -6,6 +6,25 @@ html(lang='en')
     link(rel='stylesheet', href='css/style.css')
     link(rel="shortcut icon" type="image/png" href="img/favicon.png")
     script(src='js/scripts.js')
+    script(type="application/ld+json").
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "http://www.string.services",
+        "name":"String Services",
+        "about":{
+          "description":"Simple string operations for the lazy programmer"
+        },
+        "audience":{
+        "audienceType":"Software Developers"
+        }, 
+        "author":{
+          "name":"Ashley McVeigh"
+        },
+        "isFamilyFriendly":true,
+        "keywords":"string, split, url, json, encode, decode, base64",
+        "thumbnailUrl": "http://www.string.services/img/favicon.png"
+      }
   body
     .page-container
       h1 String Services
