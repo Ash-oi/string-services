@@ -18,22 +18,36 @@ function splitString() {
     body.split(character).map(param => str += param+'\n')
     document.getElementById('input-body').value = str;
   }
+  copyStuff();
+}
+
+function copyStuff() {
+  document.getElementById("input-body").select();
+  document.execCommand("Copy");
+  document.getElementById("copy").innerHTML = "Copied!";
+  setTimeout(function() {
+    document.getElementById("copy").innerHTML = "";
+  }, 1000);
 }
 
 function urlDecode() {
   document.getElementById('input-body').value = decodeURIComponent(document.getElementById('input-body').value);
+  copyStuff();
 }
 
 function urlEncode() {
   document.getElementById('input-body').value = encodeURIComponent(document.getElementById('input-body').value);
+  copyStuff();
 }
 
 function base64Encode() {
   document.getElementById('input-body').value = btoa(document.getElementById('input-body').value);
+  copyStuff();
 }
 
 function base64Decode() {
   document.getElementById('input-body').value = atob(document.getElementById('input-body').value);
+  copyStuff();
 }
 
 function isThisRegex(string) {
@@ -67,6 +81,7 @@ function findAndReplace() {
       document.getElementById('input-body').value = body.replace(replaceRegex, withCharacter);
     }  
   }
+  copyStuff();
 }
 
 function jsonFormat() {
@@ -77,6 +92,7 @@ function jsonFormat() {
   } catch (err) {
     alert("Invalid JSON (need quotes around keys etc.)");
   }
+  copyStuff();
 }
 
 //https://api.github.com/repos/AshleyMcVeigh/string-services/commits
@@ -98,3 +114,4 @@ function loadLastCommit() {
   };
   xhr.send();
 }
+
